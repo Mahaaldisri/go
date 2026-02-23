@@ -1,7 +1,7 @@
 {
   "status": "on",
   "mode": "direct",
-  "target": "https://example.com",
+  "target": "https://smart-soft.io",
   "page": "links.html",
   "maintenance_page": "maintenance.html"
 }
