@@ -1,0 +1,7 @@
+{
+  "status": "on",
+  "mode": "direct",
+  "target": "https://example.com",
+  "page": "links.html",
+  "maintenance_page": "maintenance.html"
+}
