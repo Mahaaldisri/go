@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>Redirecting...</title>
+<script>
+async function loadConfig() {
+    const response = await fetch('config.json');
+    const config = await response.json();
+
+    if (config.status === "off") {
+        window.location.href = config.maintenance_page;
+        return;
+    }
+
+    if (config.mode === "direct") {
+        window.location.href = config.target;
+    } else if (config.mode === "page") {
+        window.location.href = config.page;
+    }
+}
+
+loadConfig();
+</script>
+</head>
+<body>
+جارٍ التحويل...
+</body>
+</html>
